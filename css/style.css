@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Viaoda+Libre&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.error-message{
+    color: red;
+    font-size: small;
+    text-align: center;
+}
+
+#logo{
+    font-family: 'Viaoda Libre', cursive;
+    font-size: 1.6rem;
+}
+/******************************************
+                Login Page 
+*******************************************/
+
+#login-main{
+    display: flex;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    width: 800px;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+#landing-picture-box{
+    height: auto;
+    width: 400px;
+}
+
+#landing-picture{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+#login-main > div{
+    width: 400px;
+}
+
+#login-main > div > div{
+    margin-top: 105px
+}
+
+#login-form > div:first-child, #login-form > div:nth-child(2){
+    padding-left:50px;
+}
+
+form{
+    padding: 15px;
+}
+input[type="email"], input[type="password"], input[type="text"] {
+    width: 250px;
+    border: 0;
+    border-bottom: 1px solid #9e9e9e;
+    padding-bottom: 10px;
+}
+
+input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focus{
+    border: 0;
+    border-bottom: 1px solid #039be5;
+    outline: none;
+}
+
+form > div {
+    margin: 10px 0;
+}
+
+label{
+    display: inline-block;
+    width: 120px;
+}
+
+form div:last-child{
+    text-align: center;
+    margin-top:20px;
+}
+
+input[type="submit"], input[type="reset"]{
+    border: 0;
+    border-radius: 5px;
+    background-color: #1A24A1;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover, .btn:hover{
+    background-color: #19B4FF;
+    cursor: pointer;
+}
+/* NAVBAR STYLE */
+
+nav{
+    height: 70px;
+    box-shadow: 0px 7px 15px -3px rgba(43,43,43,0.51);
+}
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+    align-content: center;
+}
+
+nav > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+
+}
+
+ul, li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+li > a{
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+li > a:hover{
+    border: 1px solid #397EFF;
+    background-color: #397EFF;
+    color: white;
+}
+
+.main-wrapper{
+    display: flex;
+    justify-content: space-around;
+    height: 500px;
+    align-items: center;
+}
+
+.main-wrapper > div{
+    border-radius: 10px;
+    box-shadow: 0px 7px 15px -3px rgba(43,43,43,0.51);
+    height: 400px;
+    width: 300px;
+    position: relative;
+}
+
+.main-wrapper > div > figure{
+    height: 80%;
+    width: 100%;
+    
+}
+
+.main-wrapper > div > figure > img{
+    max-height: 400px;
+    width: 100%;
+    border-radius: 10px;
+    opacity: 0.5;
+}
+
+
+.main-wrapper > div > div {
+    position: relative;
+    height: 20%;
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.main-wrapper > div > div:hover, .main-wrapper > div > div > p > a:hover{
+    background-color: #397EFF;
+    color: white;
+}
+
+.main-wrapper > div > div > p{
+    text-align: center;
+    padding-top: 25px;
+}
+
+.message-error{
+    color: red;
+    width: 450px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+#register-form{
+    text-align: center;
+    margin: 0;
+}
+
+/* ON VERRA APRÈS*/
+
+.user_photo{
+    width: 150px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+article{
+    box-shadow: 0px 7px 15px -3px rgba(43,43,43,0.51);
+    width: 250px;
+    height: 350px;
+    border-radius: 15px;
+}
+
+#main_list{
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 10px;
+    justify-content : center;
+    margin-top:50px
+}
+
+.user_profile > p{
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.user_profile > p:first-child{
+    padding-top: 20px; 
+}
+
+.user_profile > p > a{
+    border: 1px solid #039be5;
+    padding: 5px 10px 5px 10px;
+    border-radius: 40px;
+}
+
+.user_profile > p > a:hover{
+    background-color: #039be5;
+    color: white;
+}
+
+.user_profile{
+    height: 160px;
+    border-radius: 15px;
+    box-shadow: 0px -5px 19px -2px rgba(145, 149, 158, 0.50);
+}
+
+.user_photo > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    text-align: center;
+}
+
+h1, h2{
+    text-align: center;
+    padding:40px;
+    font-family: 'Playfair Display', serif;
+}
+
+h2{
+    font-size: 50px;
+    background-color: #1A24A1;
+    color: whitesmoke;
+}
+
+.div-accueil{
+    background-color: #1A24A1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#landing-user{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    margin-left: 40px;
+    border: 1px solid white;
+}
+
+
+#big-boss{
+    text-align: center;
+    animation: Test 2s infinite;
+    color : red;
+}
+
+@keyframes Test{
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.error{
+    border-bottom-color: red !important; /* important (vu avec Thomas Toledo ) overide les propriétés existantes en css */
+}
+
+
+#form-html{
+    width: 500px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top : 40px;
+}
